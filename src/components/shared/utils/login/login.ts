@@ -1,4 +1,4 @@
 export const redirectToLogin = () => {
-    window.location.href = 'https://oauth.deriv.com/oauth2/authorize?app_id=106336';
+    window.location.href = 'https://oauth.deriv.com/oauth2/authorize?app_id=106336&l=EN&brand=legacy-hub';
 };
 

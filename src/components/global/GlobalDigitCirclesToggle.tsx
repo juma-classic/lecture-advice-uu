@@ -637,37 +637,41 @@ export const GlobalDigitCirclesToggle: React.FC = () => {
 
     return (
         <div className='global-digit-circles-toggle-container'>
-            {/* Distribution Deviation scanner button with integrated settings */}
-            <button
-                className={`distribution-scanner-toggle ${isDistributionScanning ? 'scanning' : ''} ${isDistributionLongPressing ? 'long-pressing' : ''}`}
-                onClick={handleDistributionButtonClick}
-                onMouseDown={handleDistributionButtonMouseDown}
-                onMouseUp={handleDistributionButtonMouseUp}
-                onMouseLeave={handleDistributionButtonMouseUp}
-                onTouchStart={handleDistributionButtonMouseDown}
-                onTouchEnd={handleDistributionButtonMouseUp}
-                disabled={isDistributionScanning}
-                title='Single-click to scan, Double-click for settings, Long-press for enhanced predictions'
-            >
-                <span className='label'>
-                    {isDistributionScanning ? 'Scanning...' : isDistributionLongPressing ? 'Enhanced...' : 'Patel'}
-                </span>
-            </button>
+            {/* Distribution Deviation scanner button with integrated settings - HIDDEN */}
+            {false && (
+                <button
+                    className={`distribution-scanner-toggle ${isDistributionScanning ? 'scanning' : ''} ${isDistributionLongPressing ? 'long-pressing' : ''}`}
+                    onClick={handleDistributionButtonClick}
+                    onMouseDown={handleDistributionButtonMouseDown}
+                    onMouseUp={handleDistributionButtonMouseUp}
+                    onMouseLeave={handleDistributionButtonMouseUp}
+                    onTouchStart={handleDistributionButtonMouseDown}
+                    onTouchEnd={handleDistributionButtonMouseUp}
+                    disabled={isDistributionScanning}
+                    title='Single-click to scan, Double-click for settings, Long-press for enhanced predictions'
+                >
+                    <span className='label'>
+                        {isDistributionScanning ? 'Scanning...' : isDistributionLongPressing ? 'Enhanced...' : 'Patel'}
+                    </span>
+                </button>
+            )}
 
-            {/* Hot/Cold Zone scanner button with integrated settings */}
-            <button
-                className={`hot-cold-scanner-toggle ${isScanning ? 'scanning' : ''} ${isLongPressing ? 'long-pressing' : ''}`}
-                onClick={handleButtonClick}
-                onMouseDown={handleButtonMouseDown}
-                onMouseUp={handleButtonMouseUp}
-                onMouseLeave={handleButtonMouseUp}
-                onTouchStart={handleButtonMouseDown}
-                onTouchEnd={handleButtonMouseUp}
-                disabled={isScanning}
-                title='Single-click to scan, Double-click for settings, Long-press for enhanced predictions'
-            >
-                <span className='label'>{isScanning ? 'Scanning...' : isLongPressing ? 'Enhanced...' : 'Raziel'}</span>
-            </button>
+            {/* Hot/Cold Zone scanner button with integrated settings - HIDDEN */}
+            {false && (
+                <button
+                    className={`hot-cold-scanner-toggle ${isScanning ? 'scanning' : ''} ${isLongPressing ? 'long-pressing' : ''}`}
+                    onClick={handleButtonClick}
+                    onMouseDown={handleButtonMouseDown}
+                    onMouseUp={handleButtonMouseUp}
+                    onMouseLeave={handleButtonMouseUp}
+                    onTouchStart={handleButtonMouseDown}
+                    onTouchEnd={handleButtonMouseUp}
+                    disabled={isScanning}
+                    title='Single-click to scan, Double-click for settings, Long-press for enhanced predictions'
+                >
+                    <span className='label'>{isScanning ? 'Scanning...' : isLongPressing ? 'Enhanced...' : 'Raziel'}</span>
+                </button>
+            )}
 
             {/* Distribution Deviation Signal Popup */}
             {showDistributionPopup && currentDistributionSignal && (
