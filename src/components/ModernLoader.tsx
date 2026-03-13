@@ -23,7 +23,7 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
         'Navigate markets with confidence',
         'Fast execution, reliable returns',
         'Growing your portfolio steadily',
-        'Leila Fx - Your path to financial freedom',
+        'Legacy Hub - Your path to financial freedom',
         'Elevate your trading experience',
     ];
 
@@ -288,7 +288,7 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
             { duration: 900, text: 'Activating Trading Signals', progress: 70 },
             { duration: 700, text: 'Loading Strategies', progress: 85 },
             { duration: 600, text: 'Preparing Dashboard', progress: 95 },
-            { duration: 500, text: 'Welcome to Leila Fx', progress: 100 },
+            { duration: 500, text: 'Welcome to Legacy Hub', progress: 100 },
         ];
 
         let currentPhase = 0;
@@ -366,11 +366,11 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
 
             {/* Main content */}
             <div className='zeus-loader__content'>
-                {/* Leila Fx Logo - Company Logo */}
+                {/* Legacy Hub Logo - Company Logo */}
                 <div className='zeus-loader__logo-container'>
                     <img 
-                        src="/leilafxlogo.png" 
-                        alt="Leila Fx Logo" 
+                        src="/tradersdenlogo.png" 
+                        alt="Legacy Hub Logo" 
                         className='zeus-loader__logo company-logo'
                     />
                     <div className='zeus-loader__logo-glow' />
@@ -468,8 +468,8 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
 
                 {/* Brand name */}
                 <h1 className='zeus-loader__brand'>
-                    <span className='zeus-loader__brand-zeus'>LEILA</span>
-                    <span className='zeus-loader__brand-trading'>FX</span>
+                    <span className='zeus-loader__brand-zeus'>LEGACY</span>
+                    <span className='zeus-loader__brand-trading'>HUB</span>
                 </h1>
 
                 <p className='zeus-loader__tagline'>Professional Trading Platform</p>
