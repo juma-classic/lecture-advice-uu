@@ -697,6 +697,19 @@ const AppWrapper = observer(() => {
                 'Under Killer 2026.xml',
                 'Scaling Over Bot.xml',
                 'Scaling Under Bot.xml',
+                // New bots added to public folder
+                '1-tick Digit Over 2 (Split Martingale).xml',
+                'Enhanced _ Auto Switch Over 2 bot!!! .xml',
+                'EVEN, EVEN_ODD,ODD=Bot.xml',
+                'Kool bot (1).xml',
+                'Lec.xml',
+                'M27 Auto Switch bot 2024.xml',
+                'MARVEL PRO .xml',
+                'MIKE the G ❤️💚🧡.xml',
+                'Pineal_in_Trd v2.0 (1).xml',
+                'STAKELIST BOT (1).xml',
+                'States digit switcher version 2💵 (1).xml',
+                'Under 7_8_AI(BOT)!!!.xml',
             ];
             const botPromises = botFiles.map(async file => {
                 try {
