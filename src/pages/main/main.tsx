@@ -3190,6 +3190,8 @@ const AppWrapper = observer(() => {
                                         <span style={{ position: 'relative', zIndex: 1 }}>◉ ADVANCED</span>
                                     </button>
 
+                                    {/* LEILA AI BUTTON - HIDDEN */}
+                                    {false && (
                                     <button
                                         onClick={() => toggleAnalysisTool('ai')}
                                         style={{
@@ -3259,6 +3261,7 @@ const AppWrapper = observer(() => {
                                         )}
                                         <span style={{ position: 'relative', zIndex: 1 }}>⚡ LEILA AI</span>
                                     </button>
+                                    )}
 
                                     <button
                                         onClick={() => toggleAnalysisTool('ldpanalyzer')}
@@ -3612,7 +3615,8 @@ const AppWrapper = observer(() => {
                             </div>
                         </div>
                         {/* LEILA ANALYSIS TAB - MOVED TO ANALYSIS TOOL */}
-                        {/* SIGNALS TAB */}
+                        {/* SIGNALS TAB - HIDDEN */}
+                        {false && (
                         <div
                             label={
                                 <>
@@ -3625,6 +3629,7 @@ const AppWrapper = observer(() => {
                         >
                             <ProtectedSignalsCenter />
                         </div>
+                        )}
                         {/* FREE BOTS TAB */}
                         <div
                             label={
@@ -3812,7 +3817,8 @@ const AppWrapper = observer(() => {
                             </div>
                         </div>
 
-                        {/* STRATEGY ORCHESTRATOR TAB */}
+                        {/* STRATEGY ORCHESTRATOR TAB - HIDDEN */}
+                        {false && (
                         <div
                             label={
                                 <>
@@ -3824,6 +3830,7 @@ const AppWrapper = observer(() => {
                         >
                             <StrategyOrchestrator />
                         </div>
+                        )}
 
                         {/* PREMIUM BOTS TAB - Only visible for whitelisted users */}
                         {isPremium && (

@@ -128,7 +128,7 @@ export class NotificationManager {
         }
 
         try {
-            const notification = new Notification('Leila Analysis Alert', {
+            const notification = new Notification('Legacy Hub Analysis Alert', {
                 body: alert.message,
                 icon: '/favicon-pink.svg',
                 badge: '/favicon-pink.svg',

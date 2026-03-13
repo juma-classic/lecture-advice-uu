@@ -1,9 +1,9 @@
 {
-    "name": "Leila Fx",
-    "short_name": "Leila Fx",
-    "theme_color": "#14b8a6",
-    "description": "Professional automated trading platform - Reliable trading tools by Leila Fx.",
-    "background_color": "#0f1419",
+    "name": "Legacy Hub",
+    "short_name": "Legacy Hub",
+    "theme_color": "#1a1f2e",
+    "description": "Professional automated trading platform - Reliable trading tools by Legacy Hub.",
+    "background_color": "#1a1f2e",
     "display": "standalone",
     "start_url": "/",
     "icons": [

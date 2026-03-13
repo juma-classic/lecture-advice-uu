@@ -22,42 +22,42 @@
         /></noscript>
 
         <!-- Primary Meta Tags -->
-        <meta name="title" content="Leila Fx - Professional Trading Platform" />
+        <meta name="title" content="Legacy Hub - Professional Trading Platform" />
         <meta
             name="description"
-            content="Trade with confidence using Leila Fx. Professional automated trading strategies with a modern platform. Reliable, efficient, and easy to use for all traders."
+            content="Trade with confidence using Legacy Hub. Professional automated trading strategies with a modern platform. Reliable, efficient, and easy to use for all traders."
         />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://mozaictradinghub.com/" />
-        <meta property="og:title" content="Leila Fx - Professional Trading Platform" />
+        <meta property="og:title" content="Legacy Hub - Professional Trading Platform" />
         <meta
             property="og:description"
-            content="Trade with confidence using Leila Fx. Professional automated trading strategies with a modern platform. Reliable, efficient, and easy to use for all traders."
+            content="Trade with confidence using Legacy Hub. Professional automated trading strategies with a modern platform. Reliable, efficient, and easy to use for all traders."
         />
         <meta property="og:image" content="https://mozaictradinghub.com/tradersdenlogo.png" />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://mozaictradinghub.com/" />
-        <meta property="twitter:title" content="Leila Fx - Professional Trading Platform" />
+        <meta property="twitter:title" content="Legacy Hub - Professional Trading Platform" />
         <meta
             property="twitter:description"
-            content="Trade with confidence using Leila Fx. Professional automated trading strategies with a modern platform. Reliable, efficient, and easy to use for all traders."
+            content="Trade with confidence using Legacy Hub. Professional automated trading strategies with a modern platform. Reliable, efficient, and easy to use for all traders."
         />
         <meta property="twitter:image" content="https://mozaictradinghub.com/tradersdenlogo.png" />
 
         <!-- Additional SEO Meta -->
         <meta
             name="keywords"
-            content="Leila Fx, professional trading, automated trading, modern trading platform, trading bot, algorithmic trading, deriv trading"
+            content="Legacy Hub, professional trading, automated trading, modern trading platform, trading bot, algorithmic trading, deriv trading"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#0ccf5a" />
+        <meta name="theme-color" content="#1a1f2e" />
         <link rel="canonical" href="https://mozaictradinghub.com/" />
 
-        <title>Leila Fx - Professional Trading Platform</title>
+        <title>Legacy Hub - Professional Trading Platform</title>
 
         <!-- Deriv API Script -->
         <script src="https://api.deriv.com/api-base.js" async></script>
@@ -65,6 +65,19 @@
         <style>
             :root {
                 font-size: 62.5%;
+                /* Legacy Hub Dark Theme Variables */
+                --primary-bg: #1a1f2e;
+                --secondary-bg: #2d3748;
+                --accent-green: #22c55e;
+                --accent-blue: #3b82f6;
+                --accent-purple: #a855f7;
+                --text-primary: #ffffff;
+                --text-secondary: #e2e8f0;
+                --text-muted: #94a3b8;
+                --border-color: #374151;
+                --success-color: #22c55e;
+                --warning-color: #f59e0b;
+                --error-color: #ef4444;
             }
 
             /* Configure html, body, and #root to fill viewport width */
@@ -76,6 +89,7 @@
                 padding: 0;
                 overflow-x: hidden;
                 overflow-y: auto;
+                background: var(--primary-bg);
             }
 
             body {
@@ -93,6 +107,8 @@
                     'Segoe UI',
                     Roboto,
                     sans-serif;
+                background: var(--primary-bg);
+                color: var(--text-primary);
             }
 
             #root {
@@ -103,11 +119,12 @@
                 padding: 0;
                 overflow-x: hidden;
                 overflow-y: auto;
+                background: var(--primary-bg);
             }
 
             /* Critical loading styles */
             .loading-skeleton {
-                background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+                background: linear-gradient(90deg, var(--secondary-bg) 25%, var(--border-color) 50%, var(--secondary-bg) 75%);
                 background-size: 200% 100%;
                 animation: loading 1.5s infinite;
             }
@@ -120,10 +137,24 @@
                     background-position: -200% 0;
                 }
             }
+
+            /* Legacy Hub Trading Theme Overrides */
+            .theme--pink {
+                --brand-coral: var(--accent-green);
+                --brand-red-coral: var(--error-color);
+                --general-main-1: var(--primary-bg);
+                --general-main-2: var(--secondary-bg);
+                --general-section-1: var(--secondary-bg);
+                --general-hover: var(--border-color);
+                --text-general: var(--text-primary);
+                --text-prominent: var(--text-primary);
+                --text-less-prominent: var(--text-secondary);
+                --text-disabled: var(--text-muted);
+            }
         </style>
     </head>
 
-    <body class="body theme theme--pink">
+    <body class="body theme theme--legacy-hub">
         <div id="modal_root" class="modal-root"></div>
         <div id="popup_root" class="popup-root"></div>
         <div id="root"></div>

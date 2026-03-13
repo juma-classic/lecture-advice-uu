@@ -118,8 +118,8 @@ const BotBuilder = observer(() => {
                 <div id='scratch_div' ref={el_ref}>
                     <WorkspaceWrapper />
                 </div>
-                {/* Market Probability Card - shows when bot builder is active */}
-                {active_tab === 1 && !is_preview_on_popup && <MarketProbabilityCard />}
+                {/* Market Probability Card - HIDDEN */}
+                {false && active_tab === 1 && !is_preview_on_popup && <MarketProbabilityCard />}
             </div>
             {active_tab === 1 && <BotBuilderTourHandler is_mobile={!isDesktop} />}
             {/* removed this outside from toolbar becuase it needs to loaded seperately without dependency */}
