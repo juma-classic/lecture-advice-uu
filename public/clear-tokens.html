@@ -78,7 +78,7 @@
         <h1>🔄 App ID Update</h1>
         <div class="info">
             <p><strong>Why am I seeing this page?</strong></p>
-            <p>Legacy Hub has updated its App ID from <code>119554</code> to <code>117918</code>.</p>
+            <p>Legacy Hub has updated its App ID from <code>119554</code> to <code>106336</code>.</p>
             <p>Your stored authentication tokens are tied to the old App ID and need to be cleared.</p>
         </div>
         
@@ -133,13 +133,13 @@
                 });
                 
                 // Set new app ID
-                localStorage.setItem('config.app_id', '117918');
+                localStorage.setItem('config.app_id', '106336');
                 
                 status.className = 'status show success';
                 status.innerHTML = `
                     <strong>✅ Success!</strong><br>
                     Cleared ${keysToRemove.length} items from storage.<br>
-                    New App ID (117918) has been set.<br>
+                    New App ID (106336) has been set.<br>
                     Click "Go to Login" to authenticate with the new App ID.
                 `;
                 
@@ -154,7 +154,7 @@
         }
         
         function redirectToLogin() {
-            window.location.href = 'https://oauth.deriv.com/oauth2/authorize?app_id=117918&l=EN&brand=global-trades';
+            window.location.href = 'https://oauth.deriv.com/oauth2/authorize?app_id=106336&l=EN&brand=global-trades';
         }
     </script>
 </body>

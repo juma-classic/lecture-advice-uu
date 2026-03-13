@@ -329,17 +329,17 @@ export class DerivTradingAPI {
 
             // Fall back to the app's configured app ID
             const configAppId = localStorage.getItem('config.app_id');
-            if (configAppId && configAppId !== '119554') {
+            if (configAppId && configAppId !== '106336') {
                 console.log(`✅ Using app config App ID: ${configAppId}`);
                 return configAppId;
             }
 
             // Final fallback
-            console.log('ℹ️ Using default App ID: 119554');
-            return '119554';
+            console.log('ℹ️ Using default App ID: 106336');
+            return '106336';
         } catch (error) {
             console.error('Error getting app ID:', error);
-            return '119554';
+            return '106336';
         }
     }
 
